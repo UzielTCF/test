@@ -122,18 +122,6 @@ body {
     position: relative;
 }
 
-/* optional decorative circle */
-.green-circle {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: #008000;
-    border-radius: 50%;
-    z-index: 0;
-    right: -100px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
 /* Green Banner Section */
 .green-banner-section {
