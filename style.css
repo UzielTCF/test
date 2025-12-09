@@ -319,6 +319,81 @@ footer {
         transform: translate(-50%, -50%);
     }
 }
+.footer {
+  background: linear-gradient(180deg, #0b845d 0%, #065a3f 100%);
+  color: #ffffff;
+  padding: 2.25rem 1rem;
+  box-shadow: 0 -3px 10px rgba(6, 90, 63, 0.12);
+  margin-top: 2rem;
+}
+
+/* Keep footer content centered and constrained */
+.footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Footer list layout */
+.footer__list,
+.footer-list {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual list items remain simple for accessibility */
+.footer-list__item {
+  margin: 0;
+}
+
+/* Link appearance */
+.list-item__link {
+  color: rgba(255, 255, 255, 0.98);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 160ms ease, transform 120ms ease, color 160ms ease;
+  display: inline-block;
+}
+
+/* Hover & focus states (keyboard friendly) */
+.list-item__link:hover,
+.list-item__link:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+  outline: 2px solid rgba(255, 255, 255, 0.08);
+  outline-offset: 2px;
+  color: #ffffff;
+}
+
+/* Subtle footer credits / small text */
+.footer__credits {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.92;
+  margin-top: 0.75rem;
+}
+
+/* Responsive: stack links on small screens */
+@media (max-width: 600px) {
+  .footer__list,
+  .footer-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .list-item__link {
+    width: 100%;
+    text-align: center;
+    padding: 0.65rem 0.5rem;
+  }
+}
 
 @media (max-width: 600px) {
     .main-header .header-content {
