@@ -357,7 +357,6 @@ body {
  
 
 /* ======= FOOTER NUEVO Y ARREGLADO ======= */
-
 .footer {
 
     background: linear-gradient(180deg, #0b845d 0%, #065a3f 100%);
@@ -372,8 +371,6 @@ body {
 
 }
 
- 
-
 .footer__list {
 
     list-style: none;
@@ -387,8 +384,6 @@ body {
     justify-content: center;
 
 }
-
- 
 
 .list-item__link {
 
@@ -406,13 +401,75 @@ body {
 
 }
 
- 
-
 .list-item__link:hover {
 
     background-color: rgba(255,255,255,0.1);
 
 }
+
+/* ======= ESTILOS FORMULARIO FOOTER ======= */
+
+.form-label {
+
+    display: block;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    margin-bottom: 0.5rem;
+
+    margin-top: 1rem;
+
+}
+
+.form-control {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 0.75rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 1rem;
+
+    box-sizing: border-box;
+
+}
+
+.form-control:focus {
+
+    outline: none;
+
+    border-color: #ffaa00;
+
+    box-shadow: 0 0 5px rgba(255, 170, 0, 0.5);
+
+}
+
+.form-text {
+
+    display: block;
+
+    color: #e0e0e0;
+
+    font-size: 0.875rem;
+
+    margin-top: 0.5rem;
+
+}
+
+ 
+
+
+ 
+ 
+
+
 
  
 
