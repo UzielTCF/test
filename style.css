@@ -330,7 +330,7 @@ body {
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 0; /* circle removed — no rounded/circular cropping */
 
 }
 
