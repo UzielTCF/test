@@ -324,13 +324,13 @@ body {
 
 .bottom-image-wrapper img {
 
-    width: 320px;
+    width: 550px;
 
     height: 320px;
 
     object-fit: cover;
 
-    border-radius: 0; /* circle removed — no rounded/circular cropping */
+    border-radius: 8; /* circle removed — no rounded/circular cropping */
 
 }
 
