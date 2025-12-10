@@ -11,14 +11,6 @@
     <title>Todo sobre Tortugas</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        /* Smooth scrolling when clicking anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-
 </head>
 
  
@@ -57,7 +49,6 @@
         </div>
 
     </div>
-
 </section>
 
  
@@ -69,7 +60,6 @@
         <h2>Todo lo que necesitas saber sobre tortugas</h2>
 
     </div>
-
 </section>
 
  
@@ -177,9 +167,14 @@
     </ul>
 
     <h3 class="subscribe-heading">Subscribete para recibir correo electronicos!</h3>
+
     <label for="exampleInputEmail1" class="form-label">Email address</label>
 
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <!-- Form with email input and submit button side-by-side -->
+    <form class="subscribe-form" action="#" method="post" style="display:flex;gap:8px;align-items:center;margin-top:8px;">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tu@email.com">
+        <button type="submit" class="card-btn">Enviar</button>
+    </form>
 
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 
