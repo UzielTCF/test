@@ -198,7 +198,7 @@
 
     <!-- Form with email input and submit button centered below the Email Address text.
          The form keeps input and button side-by-side on wide screens and will wrap/stack on small screens. -->
-    <form class="subscribe-form" action="#" method="post" style="display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+    <form id="subscribe-form" class="subscribe-form" action="#" method="post" style="display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:8px;">
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tu@email.com" style="min-width:200px;">
     </form>
 
@@ -256,6 +256,19 @@
             }
         });
     });
+
+    // Redirect to YouTube when the subscribe form is submitted (e.g., press Enter after typing email)
+    (function() {
+        const subscribeForm = document.getElementById('subscribe-form');
+        if (!subscribeForm) return;
+
+        subscribeForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Optionally, you could validate the email here before redirecting.
+            // Redirect to the YouTube video page
+            window.location.href = 'https://youtu.be/dQw4w9WgXcQ?si=il3m1pcNMuyKcOGS';
+        });
+    })();
 </script>
 
 </body>
