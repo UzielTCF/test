@@ -11,7 +11,13 @@
 </head>
 <body>
     <div class="background-texture"></div>
-
+    <script>
+document.getElementById("menuToggle").addEventListener("click", () => {
+    const nav = document.getElementById("mobileNav");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+});
+</script>
+</body>
     <header class="main-header">
         <div class="container header-content">
             <button class="menu-toggle" id="menuToggle">☰</button>
