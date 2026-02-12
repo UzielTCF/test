@@ -886,4 +886,23 @@ h4 { font-size: 1.1rem; }
         display: none;
     }
 }
+.theme-toggle {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+/* Modo claro */
+.light-mode {
+    --bg: #f7f7f7;
+    --text: #1a1a1a;
+    --muted: #555;
+    --card: rgba(255,255,255,0.8);
+    --card-strong: rgba(255,255,255,0.95);
+    --border: rgba(0,0,0,0.1);
+}
 
