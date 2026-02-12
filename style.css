@@ -855,3 +855,35 @@ h4 { font-size: 1.1rem; }
         margin-top: 10px;
     }
 }
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: rgba(6, 21, 17, 0.95);
+    padding: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.mobile-nav a {
+    padding: 12px 0;
+    font-weight: 700;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .main-nav {
+        display: none;
+    }
+}
+
