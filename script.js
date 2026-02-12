@@ -5,4 +5,9 @@ document.getElementById("formBoletin").addEventListener("submit", function(e) {
     this.reset(); // Limpia el formulario
 });
 </script>
+<script>
+document.getElementById("themeToggle").addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+});
+</script>
 
