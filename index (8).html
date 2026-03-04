@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre Tortugas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="background-texture"></div>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark" aria-hidden="true">🐢</span>
+                Todo sobre tortugas
+            </div>
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a href="#especies">Especies</a>
+                <a href="#cuidados">Cuidados</a>
+                <a href="#habitat">Hábitat</a>
+                <a href="#alimentacion">Alimentación</a>
+                <a href="#conservacion">Conservación</a>
+                <a href="#boletin">Recibir guía</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-controls="mobileNav"
+                aria-expanded="false">
+                ☰
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+            <a href="#especies">Especies</a>
+            <a href="#cuidados">Cuidados</a>
+            <a href="#habitat">Hábitat</a>
+            <a href="#alimentacion">Alimentación</a>
+            <a href="#conservacion">Conservación</a>
+            <a href="#boletin">Recibir guía</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Guía moderna de tortugas</p>
+                    <h1>Las tortugas son antiguas, resistentes y llenas de historias que protegen océanos y selvas.</h1>
+                    <p class="lede">En esta pagina podras explorar especies, aprender como cuidarlas, arma el hábitat
+                        perfecto y súmate a quienes las conservan. Todo en un solo lugar.</p>
+                    <div class="cta-row">
+                        <a class="btn primary" href="#cuidados">Cómo cuidarlas</a>
+                        <a class="btn ghost" href="#especies">Ver especies</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span>+300</span>
+                            <small>Especies catalogadas</small>
+                        </div>
+                        <div class="stat">
+                            <span>80 años</span>
+                            <small>Promedio de vida</small>
+                        </div>
+                        <div class="stat">
+                            <span>7/10</span>
+                            <small>Amenazadas por el humano</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-image-frame">
+                        <div class="carousel" aria-label="Galería destacada">
+                            <div class="slides">
+                                <img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=900&q=80"
+                                    alt="Tortuga carey nadando" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1527203561188-d9f84d48501b?auto=format&fit=crop&w=900&q=80"
+                                    alt="Tortuga en arrecife" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                                    alt="Tortuga acercándose a la superficie" loading="lazy">
+                            </div>
+                            <button class="prev" type="button" aria-label="Imagen anterior">❮</button>
+                            <button class="next" type="button" aria-label="Imagen siguiente">❯</button>
+                        </div>
+                        <div class="floating-tag">Guardianas del océano</div>
+                        <div class="floating-card">
+                            <p>Dato veloz</p>
+                            <strong>Las tortugas laúd pueden bucear a más de 1,000 m.</strong>
+                        </div>
+                    </div>
+                    <div class="hero-orb"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pill-row" id="destacados">
+            <div class="container pill-grid">
+                <div class="pill">
+                    <h3>Longevidad</h3>
+                    <p>Viven décadas: paciencia y estabilidad son la clave para su bienestar.</p>
+                </div>
+                <div class="pill">
+                    <h3>Resistencia</h3>
+                    <p>Caparazones capaces de soportar grandes presiones y climas extremos.</p>
+                </div>
+                <div class="pill">
+                    <h3>Guardianes</h3>
+                    <p>Ayudan a mantener arrecifes sanos y praderas marinas oxigenadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="especies">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Mapa de especies</p>
+                    <h2>Las tortugas más admiradas del planeta</h2>
+                    <p class="section-lede">De mares turquesa a desiertos ardientes, cada especie ha desarrollado un
+                        superpoder distinto.</p>
+                </div>
+                <div class="cards-grid">
+                    <article class="card">
+                        <img src="https://github.com/UzielTCF/test/blob/main/download%20(32).png?raw=true"
+                            alt="Tortuga verde" class="card-img">
+                        <div class="card-body">
+                            <h3>Tortuga verde</h3>
+                            <p>Dieta herbívora, impulsa el crecimiento de pastos marinos y limpia algas invasoras.</p>
+                            <ul class="chip-row">
+                                <li>Océanos tropicales</li>
+                                <li>100 kg</li>
+                                <li>Crítica</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://github.com/UzielTCF/test/blob/main/download%20(32).jpeg?raw=true"
+                            alt="Tortuga de tierra" class="card-img">
+                        <div class="card-body">
+                            <h3>Tortuga sulcata</h3>
+                            <p>Resiste climas secos, excava madrigueras profundas y puede pesar más de 80 kg.</p>
+                            <ul class="chip-row">
+                                <li>Sabana</li>
+                                <li>Herbívora</li>
+                                <li>Hasta 70 años</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=900&q=80"
+                            alt="Tortuga carey" class="card-img">
+                        <div class="card-body">
+                            <h3>Tortuga carey</h3>
+                            <p>Caparazón ámbar y pico curvado; esencial para mantener sanos los arrecifes de coral.</p>
+                            <ul class="chip-row">
+                                <li>Arrecifes</li>
+                                <li>Plancton y esponjas</li>
+                                <li>Peligro crítico</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=900&q=80"
+                            alt="Tortuga laúd" class="card-img">
+                        <div class="card-body">
+                            <h3>Tortuga laúd</h3>
+                            <p>La más grande del mundo. No tiene escamas en el caparazón, sino una piel engrosada.</p>
+                            <ul class="chip-row">
+                                <li>Alta mar</li>
+                                <li>Medusas</li>
+                                <li>Migraciones épicas</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section two-column" id="cuidados">
+            <div class="container two-column-grid">
+                <div>
+                    <p class="eyebrow">Checklist de cuidados</p>
+                    <h2>Cuidados diarios, semanales y mensuales</h2>
+                    <div class="care-steps">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <div>
+                                <h4>Rutina diaria</h4>
+                                <p>Revisa agua limpia, temperatura estable, alimento fresco y 15 min de observación
+                                    activa.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <div>
+                                <h4>Semana a semana</h4>
+                                <p>Cambios de agua parciales, limpieza de filtro o sustrato y controles de
+                                    calcio/vitaminas.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <div>
+                                <h4>Plan mensual</h4>
+                                <p>Pesaje, medición de caparazón, revisión de uñas/pico y registro fotográfico de su
+                                    evolución.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">4</span>
+                            <div>
+                                <h4>Visitas veterinarias</h4>
+                                <p>Chequeo semestral con especialista exótico. Radiografías y desparasitación
+                                    preventiva.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="callout-card">
+                    <p class="eyebrow">Comenzar una familia</p>
+                    <h3>Guía rápida para criar tortugas felices</h3>
+                    <ul class="icon-list">
+                        <li>Terrario o acuario con zonas seca y húmeda + rayos UVB.</li>
+                        <li>Dieta variada: hojas verdes, flores, proteína puntual según especie.</li>
+                        <li>Enriquecimiento: troncos, cuevas, rocas para trepar y refugiarse.</li>
+                        <li>Temperatura estable: 24°C–30°C según su origen.</li>
+                        <li>Higiene constante: filtros, cambios de agua y desinfección segura.</li>
+                    </ul>
+                    <a class="text-link" href="https://es.wikihow.com/criar-tortugas" target="_blank">Leer guía completa
+                        →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="habitat">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Hábitat perfecto</p>
+                    <h2>Terrarios, acuarios y zonas de sol</h2>
+                </div>
+                <div class="habitat-grid">
+                    <div class="habitat-card">
+                        <div class="badge">Acuático</div>
+                        <h3>Acuario equilibrado</h3>
+                        <p>Filtro externo, lámpara UVB, plataforma para tomar el sol y termocalentador.</p>
+                        <ul class="mini-list">
+                            <li>Litros recomendados: 10x el largo de su caparazón.</li>
+                            <li>Rampa antideslizante para salir sin esfuerzo.</li>
+                            <li>Luz UVB 10.0 por 10-12 horas diarias.</li>
+                        </ul>
+                    </div>
+                    <div class="habitat-card">
+                        <div class="badge">Terrestre</div>
+                        <h3>Terrario cálido</h3>
+                        <p>Sustrato profundo, escondites, plato de agua baja y lámpara de calor focal.</p>
+                        <ul class="mini-list">
+                            <li>Gradiente de temperatura 24°–32°C.</li>
+                            <li>Humedad controlada para evitar piramidación.</li>
+                            <li>Heno + fibra vegetal para enriquecer.</li>
+                        </ul>
+                    </div>
+                    <div class="habitat-card">
+                        <div class="badge">Exterior</div>
+                        <h3>Patio seguro</h3>
+                        <p>Cercas enterradas 30 cm, plantas comestibles y charcas poco profundas.</p>
+                        <ul class="mini-list">
+                            <li>Zonas de sombra natural.</li>
+                            <li>Rocas planas para termorregular.</li>
+                            <li>Protección contra depredadores.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section two-column" id="alimentacion">
+            <div class="container two-column-grid">
+                <div>
+                    <p class="eyebrow">Alimentación inteligente</p>
+                    <h2>Menú semanal sugerido</h2>
+                    <table class="nutrition-table">
+                        <thead>
+                            <tr>
+                                <th>Día</th>
+                                <th>Base</th>
+                                <th>Suplementos</th>
+                                <th>Notas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>Hojas de diente de león y rúcula</td>
+                                <td>Calcio sin D3</td>
+                                <td>Evita espinaca por oxalatos.</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>Flores de hibisco y caléndula</td>
+                                <td>Multivitamínico ligero</td>
+                                <td>Ideal para terrestres tropicales.</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>Pellets de calidad + proteína (gammarus)</td>
+                                <td>Calcio con D3</td>
+                                <td>Solo especies acuáticas u omnívoras.</td>
+                            </tr>
+                            <tr>
+                                <td>Jueves</td>
+                                <td>Endibia, acelga, col rizada</td>
+                                <td>Probióticos naturales</td>
+                                <td>Mejora digestión y flora.</td>
+                            </tr>
+                            <tr>
+                                <td>Viernes</td>
+                                <td>Frutas bajas en azúcar (papaya, fresa)</td>
+                                <td>—</td>
+                                <td>Porción pequeña, premio enriquecedor.</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>Heno timothy + flores secas</td>
+                                <td>Calcio sin D3</td>
+                                <td>Para terrestres, evita exceso de proteína.</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>Ayuno activo</td>
+                                <td>Hidratación</td>
+                                <td>Solo agua fresca, observación y paseo.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="callout-card gradient-card">
+                    <p class="eyebrow">Micronutrientes clave</p>
+                    <h3>Calcio, UVB y fibra = caparazón fuerte</h3>
+                    <ul class="icon-list">
+                        <li>Calcio diario, D3 solo si no hay sol directo.</li>
+                        <li>UVB mínimo 10% para especies tropicales.</li>
+                        <li>Fibra alta evita piramidación en terrestres.</li>
+                        <li>Agua declorada para acuáticas.</li>
+                        <li>Evita exceso de proteína en juveniles.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="conservacion">
+            <div class="container conservation-grid">
+                <div>
+                    <p class="eyebrow">Conservación</p>
+                    <h2>Amenazas y cómo ayudar</h2>
+                    <div class="threats">
+                        <div class="threat">
+                            <span>Plástico</span>
+                            <div class="bar"><span style="width:85%"></span></div>
+                            <small>Ingesta y enredo en redes.</small>
+                        </div>
+                        <div class="threat">
+                            <span>Tráfico ilegal</span>
+                            <div class="bar"><span style="width:70%"></span></div>
+                            <small>Caparazones y mascotas exóticas.</small>
+                        </div>
+                        <div class="threat">
+                            <span>Calentamiento</span>
+                            <div class="bar"><span style="width:60%"></span></div>
+                            <small>Afecta sexado de huevos y playas.</small>
+                        </div>
+                    </div>
+                    <div class="action-row">
+                        <a class="btn ghost" href="https://es.wikipedia.org/wiki/Tortugas_marinas_en_M%C3%A9xico"
+                            target="_blank">Aprender más</a>
+                    </div>
+                </div>
+                <div class="impact-card">
+                    <h3>Impacto inmediato</h3>
+                    <ul class="icon-list">
+                        <li>Reduce plásticos de un solo uso y recicla mallas.</li>
+                        <li>Reporta tráfico y compra solo a criadores certificados.</li>
+                        <li>Participa en liberaciones y limpiezas de playa.</li>
+                        <li>Ilumina en ámbar tu casa de playa para evitar desorientación.</li>
+                        <li>Comparte ciencia: inspira con datos claros.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section two-column" id="recursos">
+            <div class="container two-column-grid">
+                <div>
+                    <p class="eyebrow">Guía express</p>
+                    <h2>Recursos descargables y atajos</h2>
+                    <div class="resource-grid">
+                        <div class="resource-card">
+                            <h4>Checklist imprimible</h4>
+                            <p>Rutinas de limpieza, alimentación y notas para el vet.</p>
+                            <span class="tag">PDF</span>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Plantilla de registro</h4>
+                            <p>Control de peso, longitud y salud general.</p>
+                            <span class="tag">Spreadsheet</span>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Mapa de especies</h4>
+                            <p>Zonas de anidación, temporadas y amenazas.</p>
+                            <span class="tag">Infografía</span>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Playlist de videos</h4>
+                            <p>Consejos de expertos en 5 minutos.</p>
+                            <span class="tag">YouTube</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="callout-card">
+                    <p class="eyebrow">FAQ rápido</p>
+                    <div class="faq">
+                        <details open>
+                            <summary>¿Puedo tocar su caparazón?</summary>
+                            <p>Hazlo poco, con manos limpias. Es piel sensible con terminaciones nerviosas.</p>
+                        </details>
+                        <details>
+                            <summary>¿Cada cuándo comen?</summary>
+                            <p>Juveniles: diario en pequeñas porciones. Adultas terrestres: 5 veces/semana. Acuáticas: 6
+                                veces/semana.</p>
+                        </details>
+                        <details>
+                            <summary>¿Luz natural o UVB?</summary>
+                            <p>Sol directo filtrado por malla fina es ideal. Si no, UVB 10.0 a 30 cm de distancia.</p>
+                        </details>
+                        <details>
+                            <summary>¿Cómo transportar?</summary>
+                            <p>Caja ventilada, toalla húmeda, temperatura estable y sin agua libre.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="galeria">
+            <div class="container">
+                <div class="section-head">
+                    <p class="eyebrow">Galería viva</p>
+                    <h2>Explora sus mundos</h2>
+                </div>
+                <div class="gallery">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                            alt="Mar con tortuga">
+                        <figcaption>Anidación en costas claras.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️👁️https://images.unsplash.com/photo-1527203561188-d9f84d48501b?auto=format&fit=crop&w=900&q=80"
+                            alt="Tortuga en arrecife">
+                        <figcaption>Arrecifes saludables gracias a ellas.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                            alt="Bebé tortuga">
+                        <figcaption>Primeros pasos hacia el mar.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ======= CONTENIDO ADICIONAL EXTENSO (MÁS INFORMACIÓN) ======= -->
+    <section class="section" id="enciclopedia">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Enciclopedia</p>
+                <h2>Enciclopedia extensa de tortugas</h2>
+                <p class="section-lede">Fichas detalladas por especie con distribución, dieta, tamaño, estado de
+                    conservación y recomendaciones de cuidado específicas.</p>
+            </div>
+
+            <div class="species-list">
+                <article class="species-item card">
+                    <h3>Tortuga verde (Chelonia mydas)</h3>
+                    <p><strong>Distribución:</strong> Océanos tropicales y subtropicales de todo el mundo.</p>
+                    <p><strong>Dieta:</strong> Principalmente herbívora en adultos (pastos marinos, algas); juveniles
+                        omnívoros.</p>
+                    <p><strong>Tamaño:</strong> Hasta 1,5 m y 180 kg.</p>
+                    <p><strong>Estado:</strong> Vulnerable / Localmente en peligro.</p>
+                    <p><strong>Consejos de conservación:</strong> Proteger zonas de anidación, reducir la contaminación
+                        plástica y evitar la pesca accidental.</p>
+                </article>
+
+                <article class="species-item card">
+                    <h3>Tortuga laúd (Dermochelys coriacea)</h3>
+                    <p><strong>Distribución:</strong> Océanos abiertos, migraciones interoceánicas.</p>
+                    <p><strong>Dieta:</strong> Principalmente medusas y gelatinosos.</p>
+                    <p><strong>Tamaño:</strong> La más grande, puede superar 2 m y 600 kg.</p>
+                    <p><strong>Estado:</strong> Vulnerable / Amenazada por redes de pesca y plásticos.</p>
+                    <p><strong>Consejos de conservación:</strong> Señalización de redes, limpieza de playas y programas
+                        de seguimiento satelital.</p>
+                </article>
+
+                <article class="species-item card">
+                    <h3>Tortuga carey (Eretmochelys imbricata)</h3>
+                    <p><strong>Distribución:</strong> Arrecifes tropicales y costeros.</p>
+                    <p><strong>Dieta:</strong> Esponjas, invertebrados y pequeñas especies de coral.</p>
+                    <p><strong>Tamaño:</strong> Hasta 1 m; caparazón con placas superpuestas.</p>
+                    <p><strong>Estado:</strong> En peligro crítico.</p>
+                    <p><strong>Consejos de conservación:</strong> Prohibición y control del comercio de caparazones,
+                        protección de arrecifes y pesca responsable.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="guia-completa">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Guía completa</p>
+                <h2>Guía completa de cuidados (detallada)</h2>
+                <p class="section-lede">Todo lo que necesitas saber para mantener una tortuga sana: desde el sustrato
+                    hasta la simulación de estaciones y el enriquecimiento ambiental.</p>
+            </div>
+
+            <div class="card">
+                <h3>Instalación y equipo</h3>
+                <ul>
+                    <li><strong>Terrario/acuário:</strong> Volumen adecuado según especie; las acuáticas necesitan al
+                        menos 10x el largo del caparazón en litros.</li>
+                    <li><strong>Rayos UVB:</strong> Bombillas UVB 10.0 o 5.0 según especie; renovarlas cada 6-12 meses
+                        según fabricante.</li>
+                    <li><strong>Calefacción:</strong> Punto caliente con lámpara infrarroja o cerámica; termostato
+                        recomendado.</li>
+                    <li><strong>Filtración:</strong> Filtros canister para acuarios grandes; cambios parciales de agua
+                        semanales.</li>
+                    <li><strong>Sustratos:</strong> Mezclas naturales, evitar arenas finas sueltas que puedan causar
+                        impactación intestinal en terrestres.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Dieta y suplementación</h3>
+                <p>Recomendaciones según tipo:</p>
+                <ul>
+                    <li><strong>Acuáticas herbívoras:</strong> Hojas marinas, algas, verduras cocidas, pellet para
+                        tortugas marinas.</li>
+                    <li><strong>Terrestres herbívoras:</strong> Mezcla de hojas verdes, flores comestibles y suplementos
+                        de calcio.</li>
+                    <li><strong>Omnívoras y carnívoras:</strong> Proteína animal (pescado, insectos limpiados) alternada
+                        con vegetales.</li>
+                    <li><strong>Suplementos:</strong> Calcio con vitamina D3, multivitamínicos solo bajo necesidad y
+                        dosis controladas.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Manejo del comportamiento</h3>
+                <ul>
+                    <li>Observación diaria para detectar cambios de apetito o movilidad.</li>
+                    <li>Enriquecimiento: escondites, plataformas, objetos para investigar y cambiar semanalmente.</li>
+                    <li>Evitar manipulación excesiva; manipular con ambas manos y cerca del cuerpo para reducir estrés.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="anatomia">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Biología</p>
+                <h2>Anatomía, fisiología y comportamiento</h2>
+                <p class="section-lede">Explicaciones científicas sobre caparazón, respiración, termorregulación y
+                    sentidos.</p>
+            </div>
+
+            <div class="two-column-grid">
+                <div class="card">
+                    <h3>El caparazón</h3>
+                    <p>El caparazón está formado por placas óseas y cartílago cubiertas por epidermis; en marinas la
+                        estructura es hidrodinámica, en terrestres adaptada a protección y reserva de agua.</p>
+                    <ul>
+                        <li><strong>Queratos:</strong> placas córneas que recubren el caparazón.</li>
+                        <li><strong>Plastrón:</strong> la parte ventral; su forma ayuda a identificar especies.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Respiración y circulación</h3>
+                    <p>Muchas tortugas marinas pueden realizar respiraciones profundas espaciadas; algunas especies
+                        poseen adaptaciones para almacenar oxígeno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="reproduccion">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Reproducción</p>
+                <h2>Reproducción y ciclo de vida</h2>
+            </div>
+            <div class="card">
+                <h3>Anidación</h3>
+                <p>Temporadas de anidación y comportamiento en playas: excavación, puesta y cuidado de huevos (en la
+                    mayoría de especies, sin cuidado parental posterior).</p>
+                <ol>
+                    <li>Selección de playa segura y oscura.</li>
+                    <li>Puesta de huevos (docenas a cientos según especie).</li>
+                    <li>Incubación dependiente de temperatura (determina sexo en muchas especies marinas).</li>
+                    <li>Emergencia de crías y carrera al mar: alta mortalidad natural.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="salud">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Salud</p>
+                <h2>Salud, enfermedades comunes y primeros auxilios</h2>
+            </div>
+            <div class="card">
+                <h3>Enfermedades frecuentes</h3>
+                <ul>
+                    <li><strong>Infecciones respiratorias:</strong> tos, secreción naso-orbital; revisar temperatura y
+                        humedad.</li>
+                    <li><strong>Impactación intestinal:</strong> causada por ingestión de arena o objetos; monitoreo de
+                        heces y apetito.</li>
+                    <li><strong>Septicemia:</strong> signos sistémicos, requiere atención veterinaria urgente.</li>
+                    <li><strong>Hiper o hipovitaminosis:</strong> exceso o déficit de D3/calcio; importante balance y
+                        exposición a UVB.</li>
+                </ul>
+                <p>Ante cualquier síntoma grave, consultar con veterinario especializado en especies exóticas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="alimentacion-detallada">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Nutrición</p>
+                <h2>Guía nutricional detallada por tipo</h2>
+            </div>
+            <div class="card">
+                <h3>Acuáticas herbívoras</h3>
+                <p>Ejemplos de alimentos, frecuencia y cómo preparar dietas balanceadas caseras y comerciales.</p>
+                <ul>
+                    <li>Hojas de lechuga romana, dandelion, kale en porciones moderadas.</li>
+                    <li>Algas marinas deshidratadas rehidratadas para introducir minerales naturales.</li>
+                    <li>Pellets específicos como complemento (no más del 30% de la dieta diaria).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="conservacion-detallada">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Conservación</p>
+                <h2>Amenazas, programas de recuperación y cómo ayudar</h2>
+            </div>
+            <div class="card">
+                <h3>Amenazas principales</h3>
+                <ul>
+                    <li>Pesca incidental (bycatch) en redes de arrastre y palangre.</li>
+                    <li>Pérdida y degradación de hábitat por urbanización y contaminación.</li>
+                    <li>Plásticos marinos y microplásticos — ingestión y enredos.</li>
+                    <li>Caza y comercio ilegal de caparazones y animales.</li>
+                </ul>
+                <h3>Qué hacen los programas efectivos</h3>
+                <ul>
+                    <li>Protección de playas de anidación, patrullas y santuarios.</li>
+                    <li>Redes de pesca con dispositivos excluidores de tortugas (TEDs).</li>
+                    <li>Rehabilitación y reintroducción de especímenes heridos.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Cómo ayudar (acciones concretas)</h3>
+                <ul>
+                    <li>Unirse a limpiezas de playa y reportar animación sospechosa.</li>
+                    <li>Donar a refugios y centros de rehabilitación locales.</li>
+                    <li>Promover pesca responsable y políticas públicas que reduzcan bycatch.</li>
+                    <li>Participar en ciencia ciudadana: conteos de anidación y reportes de varamientos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="recursos-extensos">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Recursos</p>
+                <h2>Recursos, bibliografía y descargas</h2>
+                <p class="section-lede">Enlaces a papers, guías, bases de datos y materiales descargables para uso
+                    educativo y profesional.</p>
+            </div>
+            <div class="card">
+                <h3>Enlaces recomendados</h3>
+                <ul>
+                    <li><a href="https://www.iucn.org/" target="_blank" rel="noreferrer">IUCN Red List</a> — Estados de
+                        conservación actualizados.</li>
+                    <li><a href="https://www.seaturtle.org/" target="_blank" rel="noreferrer">SeaTurtle.org</a> —
+                        Recursos globales sobre tortugas marinas.</li>
+                    <li><a href="https://www.fws.gov/" target="_blank" rel="noreferrer">USFWS</a> — Documentos técnicos
+                        y regulaciones.</li>
+                    <li><a href="https://es.wikipedia.org/wiki/Anexo:Tortugas" target="_blank"
+                            rel="noreferrer">Wikipedia (es)</a> — Buena referencia general y enlaces a artículos
+                        científicos.</li>
+                </ul>
+                <p>Descargas: guías imprimibles y plantillas (próximamente en PDF).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="glosario">
+        <div class="container">
+            <div class="section-head">
+                <p class="eyebrow">Glosario</p>
+                <h2>Términos clave</h2>
+            </div>
+            <div class="card">
+                <dl>
+                    <dt>Anidación</dt>
+                    <dd>Proceso de puesta y desarrollo embrionario fuera del agua, normalmente en playas o sustratos
+                        terrestres.</dd>
+                    <dt>Bycatch</dt>
+                    <dd>Captura incidental de especies no objetivo en actividades pesqueras.</dd>
+                    <dt>Caparazón</dt>
+                    <dd>Estructura ósea que protege al animal y que puede variar entre especies.</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIN DE CONTENIDO ADICIONAL EXTENSO -->
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo footer-logo">Todo sobre tortugas</div>
+                <p>Una guía cuidada para conocer, proteger y admirar a estos reptiles milenarios.</p>
+            </div>
+            <div>
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/Tortugas_marinas_en_M%C3%A9xico" target="_blank"
+                            rel="noreferrer">Wikipedia</a></li>
+                    <li><a href="https://www.nationalgeographicla.com/tema/contenido/animales/reptiles/tortugas"
+                            target="_blank" rel="noreferrer">National Geographic</a></li>
+                    <li><a href="https://es.wikihow.com/criar-tortugas" target="_blank" rel="noreferrer">WikiHow
+                            cuidados</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Acciones rápidas</h4>
+                <ul class="action-links">
+                    <li>🌊 <a href="#conservacion">Unirte a una limpieza</a></li>
+                    <li>📒 <a href="#cuidados">Crear plan de cuidados</a></li>
+                    <li>🎥 <a href="#recursos">Ver playlist educativa</a></li>
+                </ul>
+            </div>
+            <div class="newsletter" id="boletin">
+                <div>
+                    <h4>Suscríbete al boletín</h4>
+                    <p class="form-help">Recibe guías, tips y recursos exclusivos sobre tortugas.</p>
+                </div>
+
+                <form class="subscribe-form" id="formBoletin">
+                    <label class="form-label" for="email">Correo electrónico</label>
+                    <div class="form-row">
+                        <input type="email" id="email" name="email" placeholder="tuemail@example.com" required>
+                        <button type="submit" class="btn primary">Suscribirme</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <p class="footer-bottom">Hecho con respeto por quienes protegen a las tortugas cada día.</p>
+    </footer>
+</body>
+
+</html>
